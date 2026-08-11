@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colégio Estadual Castelo Branco | Tempo Integral 35h</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0b3c5d;
+            --secondary-color: #328cc1;
+            --accent-color: #d9b310;
+            --light-bg: #f4f9f9;
+            --text-dark: #1d2731;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--light-bg);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1d2731;
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1.2rem;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Sections */
+        section {
+            background: #fff;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            margin-bottom: 1.2rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 0.3rem;
+        }
+
+        /* Grid Layouts */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .card {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 5px solid var(--secondary-color);
+        }
+
+        .card h3 {
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        /* Highlights & Badges */
+        .badge-container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .badge {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.7rem;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Colégio Estadual Presidente Castelo Branco</h1>
+        <p>Ensino em Tempo Integral (35 Horas) • Desenvolvimento Protagonista</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">A Escola</a>
+        <a href="#modelo">Modelo 35 Horas</a>
+        <a href="#protagonismo">Protagonismo</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Sobre a Escola -->
+        <section id="sobre">
+            <h2>Nossa Instituição</h2>
+            <p>Localizado na região de Coronel Vivida, Paraná, o <strong>Colégio Estadual Presidente Castelo Branco</strong> assume um compromisso firme com a excelência na educação pública. Através da jornada ampliada, oferecemos um ambiente propício para a formação integral, unindo rigor acadêmico, inovação pedagógica e desenvolvimento humano.</p>
+            
+            <div class="badge-container">
+                <span class="badge">📍 Coronel Vivida - PR</span>
+                <span class="badge">📚 Ensino Fundamental e Médio</span>
+                <span class="badge">⭐ Educação Pública de Qualidade</span>
+            </div>
+        </section>
+
+        <!-- Modelo 35 Horas -->
+        <section id="modelo">
+            <h2>O Modelo de Tempo Integral (35 Horas)</h2>
+            <p>A matriz curricular de 35 horas semanais amplia as oportunidades de aprendizagem, garantindo que o estudante viva experiências educacionais diversificadas que superam a base tradicional.</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Formação Geral Básica</h3>
+                    <p>Aprofundamento nas áreas de Linguagens, Matemática, Ciências da Natureza e Ciências Humanas, assegurando forte base para o vestibular e o mundo do trabalho.</p>
+                </div>
+                <div class="card">
+                    <h3>Parte Diversificada</h3>
+                    <p>Componentes curriculares voltados à pesquisa, projetos integradores, pensamento computacional, práticas experimentais e nivelamento.</p>
+                </div>
+                <div class="card">
+                    <h3>Acolhimento e Vivências</h3>
+                    <p>Espaços diários voltados para o apoio socioemocional, clube de interesses, protagonismo juvenil e orientação de estudos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desenvolvimento Protagonista -->
+        <section id="protagonismo">
+            <h2>Desenvolvimento Protagonista</h2>
+            <p>No centro da nossa proposta pedagógica está o <strong>aluno como protagonista</strong> de sua própria história e da transformação da sociedade. Acreditamos que a escola deve capacitar o jovem para:</p>
+            <ul style="margin-left: 1.5rem; margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <li><strong>Autogestão:</strong> Desenvolver disciplina, foco, planejamento e autonomia na busca por objetivos de vida.</li>
+                <li><strong>Trabalho em Equipe:</strong> Liderar e colaborar em projetos de impacto comunitário e escolar.</li>
+                <li><strong>Projeto de Vida:</strong> Construção ativa e orientada dos caminhos acadêmicos, profissionais e pessoais do estudante.</li>
+            </ul>
+        </section>
+
+        <!-- Contato / Localização -->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Venha conhecer nossa estrutura e fazer parte da nossa comunidade escolar no Paraná.</p>
+            <p style="margin-top: 1rem;">
+                <strong>Localização:</strong> Região de Coronel Vivida – PR<br>
+                <strong>Modalidade:</strong> Tempo Integral (35h)<br>
+                <strong>Rede:</strong> Pública Estadual do Paraná
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Colégio Estadual Presidente Castelo Branco. Todos os direitos reservados.</p>
+        <p>Secretaria de Estado da Educação do Paraná - SEED/PR</p>
+    </footer>
+
+</body>
+</html>
